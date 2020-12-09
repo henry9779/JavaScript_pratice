@@ -1,0 +1,55 @@
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-right: 20px;
+  width: 64px;
+  height: 64px;
+  background-color: #2879a9;
+  border: white solid 3px;
+  border-radius: 32px;
+  outline: none;
+  color: white;
+  font-size: 18px;
+}
+button:hover {
+  background-color: #139cec;
+}
+button:active {
+  background-color: #0f4565;
+}
+
+.timer {
+  width: 200px;
+}
+#running {
+  color: #e03373;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-left: 16px;
+  background: linear-gradient(-90deg, #f5d2c5, #efeab3);
+  overflow: hidden;
+  height: 40px;
+}
+
+#seconds {
+  font-size: 80px;
+  font-family: monospace;
+}
+
+.dots {
+  display: flex;
+  justify-content: space-around;
+}
+.dots > div {
+  width: 5px;
+  height: 5px;
+}

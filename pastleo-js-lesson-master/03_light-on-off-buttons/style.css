@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+}
+body {
+  background: #353535;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.light {
+  background: #d4c370;
+}
+button {
+  width: 64px;
+  height: 64px;
+  border: white solid 3px;
+  border-radius: 32px;
+  outline: none;
+  color: white;
+  font-size: 18px;
+}
+button#on {
+  background-color: #00b900;
+}
+button#on:hover {
+  background-color: #00ff00;
+}
+button#on:active {
+  background-color: #008400;
+}
+button#off {
+  background-color: #a60000;
+}
+button#off:hover {
+  background-color: #dd1b1b;
+}
+button#off:active {
+  background-color: #570606;
+}
+.status {
+  margin: 10px;
+  padding: 10px;
+}
+.status.off {
+  background-color: #eaaa36;
+}
+.status.on {
+  background-color: #36ea9f;
+}

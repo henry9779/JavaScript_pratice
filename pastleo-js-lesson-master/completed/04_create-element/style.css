@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  text-align: right;
+  margin-right: 20px;
+  padding: 0 20px;
+  border-right: black solid 1px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #968f7c;
+  box-shadow: 0px 1px 5px black;
+}
+.left button {
+  font-size: 16px;
+}
+.right {
+  flex: 1;
+}
+
+.title {
+  border-bottom: black solid 1px;
+  margin-bottom: 10px;
+}
+.time {
+  margin: 5px;
+  padding-left: 5px;
+  border-left: #968f7c solid 2px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>01 - light toggle</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            background: #353535;
+            margin: 0;
+        }
+        
+        body.light {
+            background: #d4c370;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.body.addEventListener('click', function() {
+            //  選取body增加事件監聽當按下後執行function
+            document.body.classList.toggle('light')
+                // 在body裝上名為light開關
+        })
+    </script>
+</body>
+
+</html>
