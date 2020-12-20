@@ -10,7 +10,7 @@ export const addOne = async ms => {
   document.getElementById('container').appendChild(timeDiv);
 
   const loadingTyped = new Typed(textSpan, {
-    strings: ['Loading...'],
+    strings: ['Loading...']
   });
 
   await timeoutPromise(ms);
@@ -24,13 +24,13 @@ export const addOne = async ms => {
       completedTyped.cursor.remove();
     }
   });
-}
+};
 
 const mountAddOne = () => {
   document.getElementById('add-one').addEventListener('click', () => {
-    removeGreeting()
+    removeGreeting();
     addOne(Math.random() * 1000);
-  })
-}
+  });
+};
 
 export default mountAddOne;

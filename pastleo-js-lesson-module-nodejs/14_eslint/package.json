@@ -1,18 +1,25 @@
 {
-  "name": "14_eslint",
-  "version": "0.0.1",
-  "description": "",
-  "main": "src/main.js",
-  "scripts": {
-    "bundle": "webpack --config webpack.config.js"
-  },
-  "author": "PastLeo",
-  "license": "ISC",
-  "devDependencies": {
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
-  },
-  "dependencies": {
-    "typed.js": "^2.0.11"
-  }
+    "name": "14_eslint",
+    "version": "0.0.1",
+    "description": "",
+    "main": "src/main.js",
+    "scripts": {
+        "bundle": "webpack --config webpack.config.js",
+        "lint": "npx eslint src",
+        "lint-fix": "npx eslint src --fix"
+    },
+    "author": "PastLeo",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^7.15.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12"
+    },
+    "dependencies": {
+        "typed.js": "^2.0.11"
+    }
 }
